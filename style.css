@@ -14,6 +14,7 @@ body {
               center/cover no-repeat fixed;
   min-height: 100dvh;
   overflow-x: hidden;
+  touch-action: pan-y pinch-zoom;
   
 }
 .slides {
@@ -138,4 +139,5 @@ button:disabled { background: #555; cursor: not-allowed; transform: none; box-sh
 }
 @media (min-width: 1024px) {
   .content { max-width: 56rem; }
+
 }
