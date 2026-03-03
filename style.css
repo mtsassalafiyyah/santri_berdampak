@@ -12,9 +12,8 @@ body {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
               url('https://images.pexels.com/photos/31359311/pexels-photo-31359311/free-photo-of-misty-forest-landscape-at-sunrise-with-sun-rays.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
               center/cover no-repeat fixed;
-  min-height: 100dvh;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+
+
 }
 /* Lock gesture horizontal di seluruh halaman atau container utama */
 html, body {
@@ -163,6 +162,7 @@ button:disabled { background: #555; cursor: not-allowed; transform: none; box-sh
   .content { max-width: 56rem; }
 
 }
+
 
 
 
