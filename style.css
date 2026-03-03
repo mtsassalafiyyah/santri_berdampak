@@ -12,44 +12,22 @@ body {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
               url('https://images.pexels.com/photos/31359311/pexels-photo-31359311/free-photo-of-misty-forest-landscape-at-sunrise-with-sun-rays.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
               center/cover no-repeat fixed;
-
-
+  min-height: 100dvh;
+  overflow-x: hidden;
+  
 }
-/* Lock gesture horizontal di seluruh halaman atau container utama */
-html, body {
-  overflow-x: hidden;           /* cegah scroll horizontal dasar */
-  overscroll-behavior-x: none;  /* blokir swipe navigation/history gesture */
-  /* atau pakai contain kalau none terlalu agresif di beberapa browser */
-  /* overscroll-behavior-x: contain; */
-  touch-action: pan-y pinch-zoom; /* hanya izinkan vertical scroll & zoom, blok horizontal */
-  -webkit-overflow-scrolling: touch; /* smooth scrolling iOS */
-}
-
-/* Pastikan container slider juga terkunci */
 .slides {
   display: flex;
-  flex-direction: row;
   transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  width: 100%;
-  height: 100dvh;
-  overflow: hidden;              /* sudah ada, tapi pastikan */
-  overscroll-behavior-x: none;   /* tambahan pengaman di container */
-  touch-action: pan-y;           /* blok horizontal touch di slider */
-  margin: 0;
-  padding: 0;
+  min-height: 100dvh;
 }
-
-/* Slide tetap seperti sebelumnya, tapi tambah ini biar aman */
 .slide {
   flex: 0 0 100%;
-  width: 100%;
-  height: 100dvh;                /* lebih baik pakai height fix */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  box-sizing: border-box;
-  overscroll-behavior: none;     /* opsional, ekstra aman */
+  min-height: 100dvh;
 }
 .content {
   background: rgba(0, 0, 0, 0.68);
@@ -160,10 +138,4 @@ button:disabled { background: #555; cursor: not-allowed; transform: none; box-sh
 }
 @media (min-width: 1024px) {
   .content { max-width: 56rem; }
-
 }
-
-
-
-
-
