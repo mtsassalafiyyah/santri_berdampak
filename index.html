@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Datang Santri Hebat</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Slide 1 -->
+  <div id="slide1" class="slide active">
+    <div class="header-content">
+      <h1>Selamat Datang</h1>
+      <h2 class="pesantren-name">Evomatsa</h2>
+      <h3 class="pesantren-full">
+        Evolution Of Madrasah Tsanawiyah Assalafiyyah Mlangi
+      </h3>
+      <div class="blink-text">
+        <span>S</span><span>a</span><span>n</span><span>t</span><span>r</span><span>i</span>
+        <span>H</span><span>e</span><span>b</span><span>a</span><span>t</span>
+        <span>S</span><span>a</span><span>n</span><span>t</span><span>r</span><span>i</span>
+        <span>B</span><span>e</span><span>r</span><span>d</span><span>a</span><span>m</span><span>p</span><span>a</span><span>k</span><span> </span>
+       
+      </div>
+    </div>
+
+    <form id="formSlide1" class="form-container">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Masukkan nama lengkap kamu" required>
+      </div>
+
+      <div class="form-group">
+        <label for="kelas">Kelas</label>
+        <input type="text" id="kelas" placeholder="Contoh: Santri Kelas 5 atau X IPA 1" required>
+      </div>
+
+      <div class="nav-buttons">
+        <button type="button" class="btn-next" onclick="nextSlide()">Lanjut →</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Slide 2 -->
+  <div id="slide2" class="slide">
+    <h1>Peran & Refleksi Diri</h1>
+
+    <form id="formSlide2" class="form-container">
+      <div class="sections">
+        <h2>Pilihan Peran / Tugas yang Dijalankan</h2>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="peran" value="imam sholat"> Imam Sholat</label>
+          <label><input type="checkbox" name="peran" value="muadzin"> Muadzin</label>
+          <label><input type="checkbox" name="peran" value="pujian/sholawat"> Memimpin Pujian / Sholawat</label>
+          <label><input type="checkbox" name="peran" value="ceramah/kultum/khutbah"> Ceramah / Kultum / Khutbah</label>
+          <label><input type="checkbox" name="peran" value="mengajar TPA/TPQ"> Mengajar TPA / TPQ</label>
+          <label><input type="checkbox" name="peran" value="tahlil"> Memimpin Tahlil</label>
+          <label><input type="checkbox" name="peran" value="tadarus"> Memimpin Tadarus</label>
+          <label><input type="checkbox" name="peran" value="bersih masjid"> Membersihkan Masjid / Mushola</label>
+        </div>
+
+        <div class="form-group other-activity">
+          <label for="lainnya">Kegiatan Berdampak Lainnya</label>
+          <textarea id="lainnya" placeholder="Sebutkan kegiatan berdampak lainnya (jika ada)..." rows="2"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="kesan">Kesan</label>
+        <textarea id="kesan" placeholder="Tuliskan kesanmu selama di masyarakat / lingkungan..." required rows="4"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="evaluasi">Evaluasi Diri</label>
+        <textarea id="evaluasi" placeholder="Apa yang ingin kamu tingkatkan atau perbaiki ke depannya..." required rows="4"></textarea>
+      </div>
+
+      <div class="nav-buttons">
+        <button type="button" class="btn-back" onclick="prevSlide()">← Kembali</button>
+        <button type="button" class="btn-submit" onclick="window.location.href='https://forms.gle/SfAW2pZ87Fkzorb59'">Kirim Data →</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
