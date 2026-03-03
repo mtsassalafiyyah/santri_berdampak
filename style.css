@@ -18,16 +18,23 @@ body {
 }
 .slides {
   display: flex;
-  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  min-height: 100dvh;
+  flex-direction: row;
+  height: 100dvh;
+  overflow: hidden;              /* wajib */
+  scroll-snap-type: x mandatory; /* bonus: kalau mau pakai scroll juga */
+  -webkit-overflow-scrolling: touch;
 }
+
 .slide {
   flex: 0 0 100%;
+  width: 100%;
+  height: 100dvh;                /* ubah ke height fix supaya pasti satu layar penuh */
+  scroll-snap-align: start;      /* kalau pakai scroll-snap */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  min-height: 100dvh;
+  box-sizing: border-box;
 }
 .content {
   background: rgba(0, 0, 0, 0.68);
@@ -138,4 +145,5 @@ button:disabled { background: #555; cursor: not-allowed; transform: none; box-sh
 }
 @media (min-width: 1024px) {
   .content { max-width: 56rem; }
+
 }
