@@ -14,7 +14,7 @@ body {
               center/cover no-repeat fixed;
   min-height: 100dvh;
   overflow-x: none;
-  scroll-behavior: none;
+  scroll-behavior: smooth;
 }
 /* Lock gesture horizontal di seluruh halaman atau container utama */
 html, body {
@@ -163,5 +163,6 @@ button:disabled { background: #555; cursor: not-allowed; transform: none; box-sh
   .content { max-width: 56rem; }
 
 }
+
 
 
