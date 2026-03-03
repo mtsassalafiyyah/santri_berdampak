@@ -18,13 +18,13 @@ body {
   
 }
 .slides {
-  display: grid;
+  display: flex;
   transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   min-height: 100dvh;
 }
 .slide {
   grid: 0 0 100%;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
@@ -141,4 +141,5 @@ button:disabled { background: #555; cursor: not-allowed; transform: none; box-sh
   .content { max-width: 56rem; }
 
 }
+
 
